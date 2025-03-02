@@ -74,9 +74,20 @@ async function applyInlineStyles(htmlPath) {
 	}
 
 	// Создание нового файла с _rawed.html
-	const newHtmlPath = path.join(path.dirname(htmlPath), path.basename(htmlPath, path.extname(htmlPath)) + '_rawed.html');
-	fs.writeFileSync(newHtmlPath, dom.serialize(), 'utf8');
-	console.log(`Файл сохранён как: ${newHtmlPath}`);
+  const lockedElement = document.querySelector('[data-lock="true"]');
+
+  if (lockedElement) {
+    // If found, serialize only the content within this element
+    const newHtmlContent = lockedElement.innerHTML;
+    const newHtmlPath = path.join(path.dirname(htmlPath), path.basename(htmlPath, path.extname(htmlPath)) + '_rawed.html');
+    fs.writeFileSync(newHtmlPath, newHtmlContent, 'utf8');
+    console.log(`Файл сохранён как: ${newHtmlPath}`);
+  } else {
+    // If not found, write the entire HTML content to the file
+    const newHtmlPath = path.join(path.dirname(htmlPath), path.basename(htmlPath, path.extname(htmlPath)) + '_rawed.html');
+    fs.writeFileSync(newHtmlPath, dom.serialize(), 'utf8');
+    console.log(`Файл сохранён как: ${newHtmlPath}`);
+  }
 }
 
 // Запуск Electron
