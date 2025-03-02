@@ -49,11 +49,24 @@ async function applyInlineStyles(htmlPath) {
 		parsedCSS.stylesheet.rules.forEach(rule => {
 			if (rule.type === 'rule') {
 				rule.selectors.forEach(selector => {
+					// Применение стилей ко всем элементам, соответствующим селектору
 					document.querySelectorAll(selector).forEach(element => {
-						const inlineStyle = element.getAttribute('style') || '';
+						// Получаем текущие инлайновые стили элемента
+						let inlineStyle = element.getAttribute('style') || '';
+						let className = selector.replace(/\./g, '');
+
+						// Применяем стили для этого селектора
 						const newStyle = rule.declarations.map(decl => `${decl.property}: ${decl.value};`).join(' ');
-						element.setAttribute('style', `${inlineStyle} ${newStyle}`.trim());
-						element.removeAttribute('class');
+
+						// Если уже есть инлайн стиль, добавляем новый стиль
+						inlineStyle = `${inlineStyle} ${newStyle}`.trim();
+						element.setAttribute('style', inlineStyle);
+						console.log(element.tagName + ' [' + selector + '] {' + inlineStyle + '}');
+						element.classList.remove(className);
+
+						if (element.classList.length === 0) {
+							element.removeAttribute('class');
+						}
 					});
 				});
 			}
