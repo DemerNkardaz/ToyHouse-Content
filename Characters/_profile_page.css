@@ -6,6 +6,16 @@ h2 {
 	margin: 35pt 0 15pt 0;
 }
 
+.background-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-family: "Calibri", sans-serif;
+}
+
 .root-container {
 	position: relative;
 	display: flex;
@@ -13,7 +23,6 @@ h2 {
 	align-items: center;
 	width: 100%;
 	margin: 60pt auto;
-	font-family: "Calibri", sans-serif;
 }
 
 .profile-container {
