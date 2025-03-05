@@ -13,7 +13,8 @@ h2 {
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	border: 2px solid #fafafa;box-shadow: 0 10px 0px 0px #c3c3c3;
+	border: 2px solid #fafafa;
+	box-shadow: 0 10px 0 0 #c3c3c3;
 	border-radius: 5pt;
 	margin: 15pt auto 40pt auto;
 	font-family: "Calibri", sans-serif;
@@ -36,7 +37,7 @@ h2 {
 	max-width: 1024px;
 	min-height: 256px;
 	margin: 20pt auto;
-	box-shadow: 0 3px 0px 0px #c3c3c3;
+	box-shadow: 1px 3px 0px 0px #c3c3c3;
 	overflow: hidden;
 }
 
@@ -62,8 +63,8 @@ h2 {
 	max-width: 256px;
 	background: #FEFEFE;
 	padding: 35pt 15pt;
-	border: 4px solid #ffffff;
 	border-radius: 5pt 0 0 5pt;
+	box-shadow: 1px 0 3px 0 #671d7681;
 }
 
 .profile-avatar {
@@ -84,7 +85,7 @@ h2 {
 	margin: 25pt;
 	border: 4px solid #ffffff;
 	border-radius: 10pt;
-	box-shadow: inset 0 0 3px 1px #c3c3c3;
+	box-shadow: inset 0 0 3px 1px #c3c3c3, inset 2px 2px 0 0 #c3c3c3;
 }
 
 .border-styles-light {
