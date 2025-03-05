@@ -245,6 +245,11 @@ sup { vertical-align: top; position: relative; font-size: 0.6em; top: 3pt; }
 	width: 100%;
 }
 
+.border-styles {
+	border: 1px solid #AFAFAF;
+	border-radius: 5pt;
+}
+
 .mother-box {
 	display: flex;
 	justify-content: space-between;

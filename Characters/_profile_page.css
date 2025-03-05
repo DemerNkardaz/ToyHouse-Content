@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+
+h2 {
+	margin: 15pt;
+}
+
+.root-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 60pt auto;
+	font-family: "Calibri", sans-serif;
+}
+
+.profile-container {
+	display: flex;
+	width: 100%;
+	max-width: 1024px;
+	min-height: 256px;
+	margin: 20pt auto;
+	background-image: repeating-linear-gradient(135deg, rgba(68,68,68,0.07) 0px, rgba(68,68,68,0.07) 2px,transparent 2px, transparent 4px),repeating-linear-gradient(45deg, rgba(68,68,68,0.07) 0px, rgba(68,68,68,0.07) 2px,transparent 2px, transparent 4px),linear-gradient(135deg, rgb(16,251,163),rgb(55,251,235));
+	box-shadow: 0 3px 0px 0px #c3c3c3;
+}
+
+.avatar-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	max-width: 256px;
+	background: #fff;
+	background-image: radial-gradient(circle at 24% 76%, rgb(228,236,234) 0%, rgb(228,236,234) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 76% 76%, rgb(228,236,234) 0%, rgb(228,236,234) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 76% 24%, rgb(228,236,234) 0%, rgb(228,236,234) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 24% 24%, rgb(228,236,234) 0%, rgb(228,236,234) 10%,transparent 10%, transparent 100%),radial-gradient(circle at center center, rgb(238,238,238) 0%, rgb(238,238,238) 71%,transparent 71%, transparent 100%),linear-gradient(90deg, rgb(228,236,234),rgb(228,236,234));
+	background-size: 52px 52px;
+	padding: 35pt 15pt;
+	border: 4px solid #ffffff;
+	border-radius: 5pt 0 0 5pt;
+}
+
+.profile-avatar {
+	width: 100%;
+	max-width: 150px;
+	min-height: 150px;
+}
+
+.about-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100px;
+	max-width: 100%;
+	background: #FFF;
+	padding: 25pt 15pt;
+	margin: 25pt;
+	border: 4px solid #ffffff;
+	border-radius: 10pt;
+	box-shadow: inset 0 0 3px 1px #c3c3c3;
+}
+
+.border-styles-light {
+	border: 1px solid #E2E2E2;
+	border-radius: 5pt;
+}
