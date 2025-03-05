@@ -13,7 +13,11 @@ h2 {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	border: 2px solid #fafafa;box-shadow: 0 10px 0px 0px #c3c3c3;
+	border-radius: 5pt;
+	margin: 15pt auto 40pt auto;
 	font-family: "Calibri", sans-serif;
+	overflow: hidden;
 }
 
 .root-container {
@@ -41,7 +45,6 @@ h2 {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-left: 1px solid #E2E2E2;
 	border-radius: 10pt 0 0 10pt;
 	top: 0;
 	left: 0;
