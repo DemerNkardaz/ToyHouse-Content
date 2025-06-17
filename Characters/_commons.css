@@ -10,7 +10,7 @@ body {
 p {
 	margin: 10pt 0;
 }
-
+/*
 table {
 	font-size: 10pt;
 	border: 1px solid #DDDDDD;
@@ -22,7 +22,7 @@ tr, td {
 	border-radius: 5pt;
 	padding: 5pt 10pt;
 }
-
+*/
 hr {
 	width: 100%;
 	height: 1px;

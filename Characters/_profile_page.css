@@ -4,6 +4,12 @@
 
 h2 {
 	margin: 35pt 0 15pt 0;
+	font-weight: normal;
+}
+
+h3 {
+	margin: 0;
+	font-weight: normal;
 }
 
 .background-container {
@@ -11,14 +17,15 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 	width: 100%;
 	height: 100%;
 	border: 2px solid #fafafa;
+	color: #333;
 	box-shadow: 0 10px 0 0 #c3c3c3;
 	border-radius: 5pt;
 	margin: 15pt auto 40pt auto;
 	font-family: "Calibri", sans-serif;
-	overflow: hidden;
 }
 
 .root-container {
@@ -64,7 +71,7 @@ h2 {
 	background: #FEFEFE;
 	padding: 35pt 15pt;
 	border-radius: 5pt 0 0 5pt;
-	box-shadow: 1px 0 3px 0 #671d7681;
+	box-shadow: 1px 0 3px 0 #aa85b2;
 }
 
 .profile-avatar {
@@ -78,14 +85,53 @@ h2 {
 	justify-content: flex-start;
 	flex-direction: column;
 	width: 100%;
-	min-height: 100px;
 	max-width: 100%;
+}
+
+.about-block {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
 	background: #FEFEFE;
-	padding: 25pt 15pt;
+	padding: 1.5pt;
 	margin: 25pt;
 	border: 4px solid #ffffff;
 	border-radius: 10pt;
 	box-shadow: inset 0 0 3px 1px #c3c3c3, inset 2px 2px 0 0 #c3c3c3;
+}
+
+.about-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 0 0 10pt;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	font-weight: normal;
+	color: #aa85b2;
+	border-bottom: 1px solid #eee;
+}
+
+.about-table {
+	border-collapse: collapse;
+}
+
+.about-table-property {
+	color: #aa85b2;
+}
+
+.about-table-cell, .about-table-row {
+	border: 1px solid #DDDDDD;
+	padding: 5pt 10pt;
+}
+
+.first-row {
+	border-top: 0;
+}
+
+.last-row {
+	border-bottom: 0;
 }
 
 .border-styles-light {
